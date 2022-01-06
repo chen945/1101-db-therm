@@ -1,5 +1,5 @@
 {
-  "name": "crown-xx",
+  "name": "crown-76",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -18,6 +18,7 @@
     "morgan": "~1.10.0",
     "pg": "^8.7.1",
     "phoenix": "^1.6.0",
+    "sass": "^1.43.4",
     "valid-url": "^1.0.9",
     "ws": "^8.2.3"
   }

@@ -1,23 +1,23 @@
-const { Pool } = require('pg');
+const { Pool } = require('pg')
 
 // set production variable. This will be called when deployed to a live host
-const isProduction = process.env.NODE_ENV === 'production';
+const isProduction = process.env.NODE_ENV === 'production'
 
-let pool;
+let pool
 
 if (isProduction) {
   pool = new Pool({
     connectionString: process.env.DATABASE_URL,
     ssl: { rejectUnauthorized: false },
-  });
+  })
 } else {
   pool = new Pool({
     user: 'postgres',
     host: 'localhost',
-    database: 'crown_xx',
+    database: '1101_db_76',
     password: '0000',
     port: '5432',
-  });
+  })
 }
 
 // pool.query('SELECT * from category_xx', (err, res) => {
@@ -25,4 +25,4 @@ if (isProduction) {
 //   pool.end();
 // });
 
-module.exports = pool;
+module.exports = pool
